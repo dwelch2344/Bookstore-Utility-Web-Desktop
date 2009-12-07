@@ -20,9 +20,9 @@ import com.extjs.gxt.ui.client.widget.grid.Grid;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.ui.Button;
-import com.utahwd.gwt.data.Modelable;
 
 import edu.slcc.bookstore.utility.client.domain.Employee;
+import edu.slcc.bookstore.utility.client.domain.Modelable;
 
 public class EntryPoint implements com.google.gwt.core.client.EntryPoint {
 
@@ -45,9 +45,9 @@ public class EntryPoint implements com.google.gwt.core.client.EntryPoint {
 		
 		// Create our columns
 		List<ColumnConfig> columns = new ArrayList<ColumnConfig>();
-		ColumnConfig column = new ColumnConfig("sNumber", 100);
+		ColumnConfig column = new ColumnConfig("sNumber", "SNumber", 100);
 		columns.add(column);
-		column = new ColumnConfig("name", 100);
+		column = new ColumnConfig("name", "Employee", 100);
 		columns.add(column);
 		ColumnModel model = new ColumnModel(columns);
 		Grid<ModelData> grid = new Grid<ModelData>(store, model);

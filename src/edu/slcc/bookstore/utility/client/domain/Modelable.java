@@ -1,4 +1,4 @@
-package com.utahwd.gwt.data;
+package edu.slcc.bookstore.utility.client.domain;
 
 import com.extjs.gxt.ui.client.data.ModelData;
 
