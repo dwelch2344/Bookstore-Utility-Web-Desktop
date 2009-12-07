@@ -3,6 +3,8 @@ package edu.slcc.bookstore.utility.client.domain;
 import com.extjs.gxt.ui.client.data.BaseModelData;
 import com.extjs.gxt.ui.client.data.ModelData;
 
+import edu.slcc.bookstore.utility.client.data.Modelable;
+
 public class Employee implements Modelable{
 
 	private String sNumber, name;

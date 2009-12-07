@@ -21,8 +21,8 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.ui.Button;
 
+import edu.slcc.bookstore.utility.client.data.Modelable;
 import edu.slcc.bookstore.utility.client.domain.Employee;
-import edu.slcc.bookstore.utility.client.domain.Modelable;
 
 public class EntryPoint implements com.google.gwt.core.client.EntryPoint {
 

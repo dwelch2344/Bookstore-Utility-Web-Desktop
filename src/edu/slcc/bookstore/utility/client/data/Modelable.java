@@ -1,4 +1,4 @@
-package edu.slcc.bookstore.utility.client.domain;
+package edu.slcc.bookstore.utility.client.data;
 
 import com.extjs.gxt.ui.client.data.ModelData;
 
