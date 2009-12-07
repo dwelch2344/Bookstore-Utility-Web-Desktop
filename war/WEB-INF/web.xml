@@ -17,6 +17,17 @@
   </servlet-mapping>
   -->
   
+  
+  <servlet>
+    <servlet-name>employeeLookupServlet</servlet-name>
+    <servlet-class>edu.slcc.bookstore.utility.server.EmployeeLookupServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>employeeLookupServlet</servlet-name>
+    <url-pattern>/bookstore_utility_web_desktop/EmployeeLookupService</url-pattern>
+  </servlet-mapping>
+  
   <!-- Default page to serve -->
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>

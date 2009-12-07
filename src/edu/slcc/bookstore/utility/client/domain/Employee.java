@@ -10,10 +10,15 @@ import com.extjs.gxt.ui.client.data.BeanModelMarker.BEAN;
 
 import edu.slcc.bookstore.utility.client.data.Modelable;
 
-public class Employee implements Serializable, BeanModelTag, Modelable{
+public class Employee implements Serializable, BeanModelTag{
 
 	private static final long serialVersionUID = -7413481463818422595L;
 	private String sNumber, name;
+	
+	// DON'T FORGET THIS OTHERWISE GWT COMPLAINS!!!
+	public Employee() {
+		// TODO Auto-generated constructor stub
+	}
 	
 	public Employee(String sNumber, String name) {
 		this.sNumber = sNumber;
@@ -29,17 +34,6 @@ public class Employee implements Serializable, BeanModelTag, Modelable{
 		return sNumber;
 	}
 	
-	@Override
-	public ModelData getModel() {
-		return new EmployeeModelData(sNumber, name); 
-	}
-	
-	private class EmployeeModelData extends BaseModelData{
-		public EmployeeModelData(String sNumber, String name) {
-			set("sNumber", sNumber);
-			set("name", name);
-		}
-	}
 	
 	
 	/*
